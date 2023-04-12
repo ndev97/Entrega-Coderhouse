@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promediar notas</title>
+    <link rel="shortcut icon" href="imgs/icon-books.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylesMainCont.css">
+    <script defer src="script.js"></script>
+    <!-- toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="container" id="container-1">
+            <h1>Promediador de notas</h1>
+    
+            <div class="input-box">
+                <p class="sub-title">Ingresar datos</p>
+                <input class="input" id="nombre" type="text" placeholder="Nombre y Apellido">
+                <input class="input" id="materia" type="text" placeholder="Materia">
+            </div>
+    
+            <div class="cantidad-notas-box">
+                <div class="switcher-cont">
+                    <select class="switcher" id="list" >
+                        <option value="">Cantidad de notas</option>
+                        <option value="uno">Uno</option>
+                        <option value="dos">Dos</option>
+                        <option value="tres">Tres</option>
+                        <option value="cuatro">Cuatro</option>
+                        <option value="cinco">Cinco</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input-cont" id="input-cont">
+                <!-- <input type="text" class="input-switcher" placeholder="Nota 1" id="nota1">
+                <input type="text" class="input-switcher" placeholder="Nota 2" id="nota2">
+                <input type="text" class="input-switcher" placeholder="Nota 3" id="nota3">-->
+            </div>
+
+            <div class="btn-box">
+                <button class="btn" id="btn">Ingresar y calcular notas</button>
+                <button class="btn" id="btn-promediar">Promediar ultimo ingresado</button>
+            </div>
+        </div>
+    
+        <div class="container" id="container-2">
+            <h2>Buscar alumno</h2>
+            <p>Buscar un alumno por su nombre en la base de datos para ver su promedio total de todas las materias.</p>
+            <input type="text" class="input" id="input-search" placeholder="Nombre del alumno">
+            <button class="btn" id="btn-buscar">Buscar</button>
+            <h3>Promedio total de notas</h3>
+            <input type="text" class="input" placeholder="Promedio de notas" id="busquedaPromedio">
+        </div>
+
+    </div>
+
+
+    <div class="cont-resultado" id="cont-resultado">
+        <!-- <div class="ultimo-ingresado">
+            <p>asdasdasd</p>
+        </div> -->
+    </div>
+
+
+    <div class="container" id="container3">
+        <div class="parr-box">
+            <h3>Mostrar y modificar lista de alumnos</h3>
+            <button class="btn" id="mostrarAlumno">Mostrar</button>
+        </div>
+
+        <!-- <div class="search-bar-box">
+            <input class="search-bar" id="searchBar" type="text" placeholder="Buscar alumno">
+        </div> -->
+
+        <div class="alumnos-list" id="alumnosList">
+            <!-- <div class="alumno-info-box">
+                <div class="alumno-info-box-name">
+                    <p>${alumno.nombre}</p>
+                </div>
+                <div class="info-alumno-box">
+                    <p>${alumno.materia}</p>
+                    <div class="nota-btn">
+                        <p>9</p>
+                        <button class="btn-eliminar" id="btnEliminar" >X</button>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        
+    </div>
+
+    <!-- sweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- toastify -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+</html>
